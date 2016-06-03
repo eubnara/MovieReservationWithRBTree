@@ -75,7 +75,7 @@ void all_free(Movie* mpp)
 Movie* random_generate()
 {
 	//영화를 선택한 후에, isRunning[] 변수도 업데이트하여 이미 선택된 영화를 중복선택하지 않도록 한다.
-	srand(time(NULL));
+	srand((unsigned)time(NULL));
 	Movie* gen = (Movie*)malloc(sizeof(Movie) * 5);
 	for (int i = 0; i < 5; i++)
 		init_movie(&gen[i]);	//Movie 구조체 사용 전 초기화

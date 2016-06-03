@@ -14,8 +14,8 @@ typedef struct _node node;
 typedef struct _node {
 	unsigned key; //key가 0 이면 NULL이라고 가정, RBT는 일반적인 정의이므로, position 보다는 key 라고 이름을 명명
 	int color;
-	node *left, *right;
-	node *parent;
+	node  *left, *right;
+	node  *parent;
 }node;
 
 
